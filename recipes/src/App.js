@@ -19,9 +19,9 @@ class App extends Component {
   render() {        
     
     const settings = {
-      infinite: true,
+      infinite: true, 
       speed: 600,
-      slidesToShow: 3.2,
+      slidesToShow: 3.3,
       nextArrow: <ArrowButton /> 
     };
 
@@ -43,14 +43,14 @@ class App extends Component {
           <BestServices/>    
 
           <div className="bloc4">   
-          	  <OurBlog/>       
-            <Slider {...settings}>
-                      
-                {reports.map(report =>
-                  <ReportItem item={report} />
-                )}
-              
-            </Slider>
+          	  <OurBlog/>    
+              <Slider {...settings}>
+                          
+                  {reports.map(report =>
+                    <ReportItem item={report} />
+                  )}
+                  
+              </Slider>              
           </div> 
 
           <BlocFinal/>        

@@ -15,6 +15,10 @@
   flex-direction: row;  
 }
 
+.card > div {
+  margin-top: 2vh;
+}
+
 .card-title {
 
   font-family: 'Montserrat', sans-serif;
@@ -74,7 +78,7 @@ mark {
     border-radius: 0.2em;
     height: 90%;
     color: white;
-    padding: 0.75em 0.75em;
+    padding: 0.83em 0.75em;
     font-size: 0.53em;
     cursor: pointer;      
   }
@@ -119,15 +123,18 @@ mark {
 .bloc2 {
   margin-top: 2%;
   background-color: rgb(250,250,252);    
-  height: 44em;  
+  height: 45em;  
 }
 
 .bestRecipes {
   font-family: 'Muli', sans-serif;  
   display: flex;
   flex-direction: column;
-  text-align: center;    
-  margin-bottom: 1.3em;
+  text-align: center;        
+}
+
+.bestRecipes + div {
+  margin-top: 3vh;
 }
 
 .bestRecipes > a:first-child {
@@ -146,26 +153,27 @@ mark {
 
 .services > div {
   font-family: 'Muli', sans-serif;
-  margin-top: 11%;    
+  margin-top: 10%; 
+  display: flex;
+  flex-direction: column;
 }
 
-.services > div > p:nth-child(-n+2) {
+.services > div > a:nth-child(-n+2) {
   font-size: 2.2em;
-  font-weight: 700;
-  line-height: 0.65em;    
+  font-weight: 700;  
 }
 
-.services > div > p:nth-child(2) {
-  margin-bottom: 10%;
+.services > div > a:nth-child(2) {
+  margin-bottom: 6%;
+  margin-top: -2vh;
 }
 
-.services > div > p:nth-child(2n+5) {
-  margin-bottom: 10%;    
+.services > div > a:nth-child(2n+5) {
+  margin-bottom: 7%;    
 }
 
-.services > div > p:nth-child(n+3):nth-child(-n+9) {
-  color: gray;
-  line-height: 0.6em;  
+.services > div > a:nth-child(n+3):nth-child(-n+9) {
+  color: gray;    
 }
 
 .services > div > button {
@@ -174,6 +182,7 @@ mark {
   color: #fff;
   background-color: rgb(186,220,88);
   border: none;
+  width: 12vw;
   border-radius: 0.3em;
   padding: 0.65em 1.1em;
   cursor: pointer;
@@ -188,19 +197,18 @@ mark {
 
 .bloc4 > * {
   margin-left: 10vw;
-  mask-image: linear-gradient(270deg, transparent, white 14%);  
+  mask-image: linear-gradient(270deg, transparent, white 12%);  
 }
 
 .report {  
-  width: 92%;
+  width: 95%;
   display: flex;
   flex-direction: column;  
-  height: 65vh;
-  margin-left: 3vw;
+  height: 63vh;
+  margin-left: 8.1vw;
   margin-top: 2vh;    
 }
-
-
+  
 .report > img {
   height: 55%;
 }
@@ -221,7 +229,7 @@ mark {
 .report > div > * {
   margin-top: 4.5vh;
   margin-left: 2vw;
-  min-width: 85%;
+  max-width: 80%;
 }
 
 .report > div > div > a {
@@ -283,13 +291,17 @@ mark {
   margin-left: 105%;
   margin-top: -6vh;
   color: white;
-  padding: 0.3em 1.8em;
+  padding: 0.28em 1.8em;
   font-size: 0.53em;
   cursor: pointer;  
 }
 
 .joinMember > div + div {
   width: 25vw;
+}
+
+.joinMember > div > div:nth-child(2) {
+  margin-top: -1.5vh;
 }
 
 .member{  
